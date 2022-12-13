@@ -1,0 +1,325 @@
+@import url("style_index.css");
+@import url("media.css");
+
+body {
+	background: linear-gradient(90deg, #f3de8a, #e7966a);		
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Cabecera */
+.header {
+    background: #17d5bb;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+/* logo */
+.logo {
+    margin-bottom: -10px;
+    margin-left: 30px
+}
+
+#logo {
+    width: 100px;
+}
+
+/* Boton logo */
+#logo:active {
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+}
+
+/* Boton login */
+.login {
+    margin-left: 55%;
+}
+
+/* Boton Q somos */
+.somos {
+    margin-left: 30px;
+}
+
+/* Boton soporte */
+.soporte {
+    margin-left: 30px;
+}
+
+/* Boton idioma */
+.idioma {
+    margin-left: 80px;
+}
+
+#bandera {
+    width: 50px;
+    margin-top: 15px;
+}
+
+#bandera:active {
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+}
+
+/* Botones */
+.cabecera {
+
+    margin-top: 25px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;  
+    font-size: 16px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 90px;
+}
+
+.cabecera:hover{
+    background: #17d5bb;
+}
+
+.cabecera:active {
+
+  border:2px solid black;
+  transform: translateY(4px);
+  transition: all 0.1s ease 0s;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Navegador */
+.navegador {
+    background: #e7966a;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+/* Selector del Tipo de comida */
+.tipoComida {
+    margin: 10px;
+}
+
+#textComida {
+    text-align: center;
+}
+
+#tipoComida {
+    width: 200px;
+    height: 100px;
+    margin-right: 55px;
+}
+
+#tipoComida2 {
+    width: 200px;
+    height: 100px;    
+}
+
+/* Funcion de boton de los Tipos de Comida */
+#tipoComida:active {
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;  
+}
+
+#tipoComida2:active {
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;  
+}
+
+/* Selector del Tipo de negocio */
+.tipoNegocio {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+
+}
+
+.textNegocio {
+    text-align: center;
+}
+
+.menuProductos {
+    display: flex;
+}
+
+/* Selector del Tipo de Productos */
+.tipoProductos {
+    width: 100%;
+    justify-content: right;
+    background: #17d5bb;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Supuesto para aplicar filtros */
+.filtros {
+    display: flex;
+}
+
+/* label buscar */
+.filtro {
+    margin: 10px;
+}
+
+.busca {
+    margin: 10px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.lupa {
+    width: 20px;
+}
+
+/* selector filtros */
+.selector {
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    justify-content: right;
+}
+
+/* Productos a elejir */
+.producto {
+    display: flex;
+    margin: 10px;
+}
+
+.imagen {
+    margin: 10px;
+    width: 200px;
+}
+
+.explicacion {
+    margin: 10px;
+    margin-top: 60px;
+    width: 600px;
+}
+
+.barraProgreso {
+    margin: 10px;
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+}
+
+.añadir {
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    background: #f3de8a;
+}
+
+.añadir:hover {
+    background: white;
+    color: #e7966a;
+}
+
+.añadir:active {
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;  
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Pie de página */
+.footer {
+    display: flex;
+    background: #17d5bb;
+    border: 2px solid white;
+}
+
+/* Selecciona Menu */
+.menu {
+    margin: 20px;
+}
+
+/* Funcion de boton menu */
+#menu:hover {
+    color: darkslategrey;
+}
+
+#menu:active {
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+}
+
+/* Selecciona la Comida */
+.comida {
+    margin: 20px;
+    margin-left: 220px;
+}
+
+/* Funcion de boton comida */
+#comida:hover {
+    color: darkslategrey;
+}
+
+#comida:active {
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+}
+
+/* Selecciona la Ciudad */
+.ciudad {
+    margin: 20px;
+    margin-left: 200px;
+}
+
+/* Funcion de boton ciudad */
+#ciudad:hover {
+    color: darkslategrey;
+}
+
+#ciudad:active {
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+}
+
+/* Selecciona la Negocio */
+.negocio {
+    margin: 20px;
+    margin-left: 150px;
+}
+
+/* Funcion de boton negocio */
+#negocio:hover {
+    color: darkslategrey;
+}
+
+#negocio:active {
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+}
+
+/* Selecciona la Publicidad */
+.publicidad {
+    margin-left: 70px;
+    margin-top: 100px;
+}
+
+/* Selecciona la Fotos Publicidad */
+.foto {
+    width: 50px;
+    margin: 20px;
+}
+
+/* Funcion de boton fotos publicidad */
+.foto:active {
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+}

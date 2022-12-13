@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Hace referencia al css para darle un diseño -->
+    <link rel="stylesheet" href="css/productos.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo ">
+            <a href="FOW_landing_page.html" class="header__logo--link"> <img src="resources/Logo-removebg-preview.png"
+                    alt=""> </a>
+        </div>
+
+        <div class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-list--element"><a class="menu__list-link" href="login.html"> LOGIN</a></li>
+                <li class="header__menu-list--element"> <a class="menu__list-link" href="">QUIENES SOMOS</a></li>
+                <li class="header__menu-list--element"><a class="menu__list-link" href=""> SOPORTE </a></li>
+                <li class="header__menu-list--element"> <a class="menu__list-imagen" href="menu__list-imagen"><img
+                            class=""
+                            src="resources/png-transparent-foreign-language-language-acquisition-learning-word-spanish-language-word-foreign-language-symbol-thumbnail.png"
+                            alt="" width="80px" height="80px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="navegador">
+        <h3 id="textComida">Comidas Destacadas</h3>
+        <div class="tipoComida">
+            <img id="tipoComida" src="resources/Pasta.jpg">
+            <img id="tipoComida" src="resources/JaponesYchinoLomismoEs.jpg">
+            <img id="tipoComida" src="resources/Pizza.jpg">
+            <img id="tipoComida" src="resources/Flamenquin.jpg">
+            <img id="tipoComida" src="resources/comidasana.jpg">
+            <img id="tipoComida2" src="resources/Hambur.jpg">   
+        </div>
+        <div class="menuProductos">
+            <div class="tipoNegocio">
+                <h5 class="textNegocio">Negocios Destacados</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Burger King
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Mc Donald's
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        TelePizza
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Dómino
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Pizzeria La Estrella
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Turco Kebab
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        La lupe
+                    </label>
+                </div>
+            </div>
+            <div class="tipoProductos">
+                <div class="filtros">
+                    <div class="filtro">
+                        <img class="lupa" src="resources/lupa.png">
+                        <input class="busca" type="text"></imput>
+                    </div>
+                    <select class="selector" aria-label="Default select example">
+                        <option selected>Filtros</option>
+                        <option value="1">Precio: mas alto al mas bajo</option>
+                        <option value="2">Precio: mas bajo al mas alto</option>
+                        <option value="3">Nombre: de A a Z</option>
+                        <option value="3">Nombre: de Z a A</option>
+                    </select>
+                </div>
+                <div class="productos">
+                    <div class="producto">
+                        <img class="imagen" src="resources/Tacos.webp">
+                        <p class="explicacion">3 tortillas de maíz. Taco de ternera con corte noble confitado por 3
+                            horas en su propia manteca.</p>
+                        <progress class="barraProgreso" max="60" value="15"></progress>
+                    </div>
+                    <button class="añadir">Añadir a la cesta</button>
+                    <div class="producto">
+                        <img class="imagen" src="resources/Hambur.jpg">
+                        <p class="explicacion">Hamburgesa artesana con doble de baicon crujiente, doble queso cheddar,
+                            cebolla cripsy y salsa barbacoa.</p>
+                        <progress class="barraProgreso" max="60" value="35"></progress>
+                    </div>
+                    <button class="añadir">Añadir a la cesta</button>
+                    <div class="producto">
+                        <img class="imagen" src="resources/Pizza.jpg">
+                        <p class="explicacion">La ideal para los amantes de la carne. Vacuno, pollo marinado, jamón york
+                            y pepperoni acompañados de nuestra mezcla de 5 quesos (gouda, emmental, cheddar, fundido
+                            para pizza y havarti).</p>
+                        <progress class="barraProgreso" max="60" value="45"></progress>
+                    </div>
+                    <button class="añadir" href="#">Añadir a la cesta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="footer_list">
+            <li class="list__element">
+                <ul class="element__list">
+                    <a href="">
+                        <li>SERVICIO AL CLIENTE</li>
+                    </a>
+                    <a href="">
+                        <li>AYUDA</li>
+                    </a>
+                    <a href="login.html">
+                        <li>INICIO SESION</li>
+                    </a>
+
+                </ul>
+            </li>
+            <li>
+                <ul class="element__list">
+                    <a href="">
+                        <li>Tipos de comida</li>
+                    </a>
+                    <a href="">
+                        <li>Hamburguesa</li>
+                    </a>
+                    <a href="">
+                        <li>Pizza</li>
+                    </a>
+                    <a href="">
+                        <li>Kebab</li>
+                    </a>
+                </ul>
+            </li>
+            <li>
+                <ul class="element__list">
+                    <a href="">
+                        <li>Ciudades</li>
+                    </a>
+                    <a href="">
+                        <li>Bornos</li>
+                    </a>
+                    <a href="">
+                        <li>Arcos</li>
+                    </a>
+                    <a href="">
+                        <li>Ubrique</li>
+                    </a>
+                </ul>
+            </li>
+            <li>
+                <ul class="element__list">
+                    <a href="">
+                        <li>Mas buscados</li>
+                    </a>
+                    <a href="">
+                        <li>Burguer King</li>
+                    </a>
+                    <a href="">
+                        <li>KFC</li>
+                    </a>
+                    <a href="">
+                        <li>Telepizza</li>
+                    </a>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="images">
+            <a href="https://www.facebook.com"><img src="resources/Facebook_f_logo_(2019).svg.png" widht="50px" height="50px" alt=""></a>
+            <a href="https://www.instagram.com"> <img src="resources/Instagram_logo_2016.svg.png" alt="" widht="50px" height="50px"></a>
+            <a href="https://www.twitter.com"> <img src="resources/twitter-logo-300x300.png" alt="" widht="50px" height="50px"> </a>
+        </div>
+    </footer>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="¡CSS Válido!" />
+        </a>
+    </p>
+</body>
+
+</html>
