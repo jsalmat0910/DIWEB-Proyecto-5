@@ -3,12 +3,32 @@ body {
   margin: 25px;
   display: flex;
   flex-direction: column;
-	background: linear-gradient(90deg, #f3de8a, #e7966a);		
+  background: linear-gradient(90deg, #f3de8a, #e7966a);
+}
+#selectorTema {
+  align-self: center;
+  height: fit-content;
+}
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 80%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+  border-radius: 35px;
 }
 
+#fuente {
+  position: relative;
+  left: 80%;
+  bottom: 0;
+  font-size: 20px;
+  color: white;
+}
 .header {
-  background-color: #17d5bb;
-  border: 2px solid white;
+  border-bottom: 2px solid white;
   display: flex;
   justify-content: space-between;
 }
@@ -38,25 +58,48 @@ body {
   list-style: none;
 }
 
+@keyframes animacion {
+  from {
+    width: 150px;
+    height: 20px;
+    line-height: 20px;
+  }
+  to {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+.menu_div {
+  position: relative;
+}
 .menu__list-link {
   box-shadow: 0 0 5px;
-  width: fit-content;
+  width: 150px;
+  height: 20px;
   background-color: #f44336;
   color: black;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  box-sizing: content-box;
 }
-.menu__list-link:hover{
-  background-color: black;
+.menu__list-link:hover {
+  animation: animacion 0.2s ease forwards;
+
+  background-color: #ec1d0e;
   color: white;
 }
 
-
 .main {
   margin-top: 20px;
-	background-color: linear-gradient(90deg, #f3de8a, #e7966a);
+
+  height: 720px;
+  /* background-color: linear-gradient(90deg, #f3de8a, #e7966a); */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -75,15 +118,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 30px;
 }
-.main__buscador input,input::placeholder {
+
+.main__buscador input:focus {
+  animation: animacion 0.2s ease forwards;
+}
+.main__buscador input,
+input::placeholder {
   font-size: 1.1em;
   opacity: initial;
   color: black;
 }
 
-
-.main__imagen img{
+.main__imagen img {
   border-radius: 300px;
   border-top-right-radius: 1px;
   border-bottom-left-radius: 1px;
@@ -91,9 +139,8 @@ body {
 }
 footer {
   margin-top: 20px;
-  background-color: #17d5bb;
   display: flex;
-  border: 2px solid white;
+  border-top: 2px solid white;
   padding: 20px;
 }
 
@@ -111,16 +158,16 @@ footer {
   justify-content: space-around;
   list-style: none;
 }
-.element__list a{
+.element__list a {
   text-decoration: none;
-  color: black;
-}
-.element__list a:hover{
-  text-decoration: underline;
   color: white;
 }
+.element__list a:hover {
+  text-decoration: underline;
+  color: rgb(155, 72, 197);
+}
 
-.element__list a li:first-child{
+.element__list a li:first-child {
   font-weight: 700;
 }
 
@@ -214,8 +261,8 @@ footer {
   .main__buscador {
     top: 30%;
     left: 13%;
-    width: 300px;
-    height: 100px;
+    width: 230px;
+    height: 90px;
   }
   .main__imagen img {
     width: 100%;

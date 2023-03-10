@@ -11,16 +11,16 @@ body {
 
 /* --------------------------------------------------------------------------------------------------- */
 
-/* Cabecera */
+/* Cabecera
 .header {
     background: #17d5bb;
     border: 2px solid white;
     margin-bottom: 20px;
     display: flex;
-}
+} */
 
 /* logo */
-.logo {
+/* .logo {
     margin-bottom: -10px;
     margin-left: 30px
 }
@@ -91,7 +91,7 @@ body {
   border:2px solid black;
   transform: translateY(4px);
   transition: all 0.1s ease 0s;
-}
+} */
 
 /* --------------------------------------------------------------------------------------------------- */
 
@@ -104,17 +104,24 @@ body {
 
 /* Selector del Tipo de comida */
 .tipoComida {
-    margin: 10px;
+    margin: 5px;
+    padding: 20px;
+    
 }
 
 #textComida {
     text-align: center;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 10px;
+    opacity: 0.7;
+    
 }
 
 #tipoComida {
     width: 200px;
     height: 100px;
-    margin-right: 55px;
+    margin-right: 35px;
 }
 
 #tipoComida2 {
@@ -136,6 +143,8 @@ body {
 /* Selector del Tipo de negocio */
 .tipoNegocio {
     border: 2px solid black;
+    background-color: lightgrey;
+    opacity: 0.7;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
@@ -147,6 +156,17 @@ body {
     text-align: center;
 }
 
+#deslizable { 
+    opacity: 0.7;
+    text-align: center;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
 .menuProductos {
     display: flex;
 }
@@ -155,7 +175,8 @@ body {
 .tipoProductos {
     width: 100%;
     justify-content: right;
-    background: #17d5bb;
+    background-color: lightgray;
+    opacity: 0.7;
     border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
@@ -200,6 +221,7 @@ body {
 }
 
 .imagen {
+    opacity: initial;
     margin: 10px;
     width: 200px;
 }
@@ -237,11 +259,7 @@ body {
 /* --------------------------------------------------------------------------------------------------- */
 
 /* Pie de página */
-.footer {
-    display: flex;
-    background: #17d5bb;
-    border: 2px solid white;
-}
+
 
 /* Selecciona Menu */
 .menu {

@@ -44,7 +44,7 @@ body {
     margin-bottom: 20px;
 }
 
-.input {
+#input {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -87,15 +87,17 @@ body {
     cursor: pointer;
     font-size: 16px;
     margin-top: 30px;
+    transition: width 0.8s;
 }
   
 .signup:hover {
+    width: 160px;
+    height: 60px;
     background-color: black;
     color: white;
-    transform: translateY(-2px);
 }
 
-.input:focus + .label {
+#input:focus + .label {
     top: -7px;
     left: 3px;
     z-index: 10;
@@ -104,14 +106,14 @@ body {
     color: #17d5bb;
 }
 
-.input:focus {
+#input:focus {
     border: 2px solid #17d5bb;
 }
 
 /* Para que se le quite el color a las etiquetas
 una vez se haya escrito y se pase a otra*/
 
-.input:not(:placeholder-shown)+ .label {
+#input:not(:placeholder-shown)+ .label {
     top: -7px;
     left: 3px;
     z-index: 10;

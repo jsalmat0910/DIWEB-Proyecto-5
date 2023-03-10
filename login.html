@@ -7,13 +7,182 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
 	<link rel="stylesheet" href="css/cssLogin.css">
+	<link rel="stylesheet" href="themes/hexagon/jquery-ui.css">
+	<link rel="stylesheet" href="themes/normal/jquery-ui.css">
+	<link rel="stylesheet" href="themes/glow_ball/jquery-ui.css">
+	<link rel="stylesheet" href="themes/custom/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script>
+		$(() => {
+			$(".pantalla").resizable()
+			let audio = new Audio("resources/arcade-retro-game-over-213.wav");
+			function playAudio() {
+				audio.play();
+			}
+			let login = $('#recordar').on('change', () => {
+				playAudio();
+			});
+			let select = $("#selectorTema");
+
+			switch (Number(select.val())) {
+				case 1:
+					$(".menu__list-link").removeClass("normal-ui-button normal-ui-widget normal-ui-corner-all ")
+					$(".menu__list-link").removeClass("glow-ball-ui-button glow-ball-ui-widget glow-ball-ui-corner-all ")
+					$(".menu__list-link").removeClass("custom-ui-button custom-ui-widget custom-ui-corner-al")
+					$(".menu__list-link").addClass("hexagon-ui-button hexagon-ui-widget hexagon-ui-corner-all ")
+					$("#loginButton").removeClass("glow-ball-ui-button ")
+					$("#loginButton").removeClass("normal-ui-button")
+					$("#loginButton").addClass("hexagon-ui-button")
+					$("#registerButton").removeClass("glow-ball-ui-button ")
+					$("#registerButton").removeClass("normal-ui-button")
+					$("#registerButton").addClass("hexagon-ui-button")
+					$("#googleButton").removeClass("glow-ball-ui-button ")
+					$("#googleButton").removeClass("normal-ui-button")
+					$("#googleButton").addClass("hexagon-ui-button")
+					break;
+				case 2:
+					$(".menu__list-link").removeClass("hexagon-ui-button hexagon-ui-widget hexagon-ui-corner-all")
+					$(".menu__list-link").removeClass("normal-ui-button normal-ui-widget normal-ui-corner-all ")
+					$(".menu__list-link").removeClass("custom-ui-button custom-ui-widget custom-ui-corner-al")
+
+					$(".menu__list-link").addClass("glow-ball-ui-button glow-ball-ui-widget glow-ball-ui-corner-all ")
+					$("#loginButton").removeClass("hexagon-ui-button ")
+					$("#loginButton").removeClass("normal-ui-button")
+					$("#loginButton").addClass("glow-ball-ui-button")
+					$("#registerButton").removeClass("hexagon-ui-button ")
+					$("#registerButton").removeClass("normal-ui-button")
+					$("#registerButton").addClass("glow-ball-ui-button")
+					$("#googleButton").removeClass("hexagon-ui-button ")
+					$("#googleButton").removeClass("normal-ui-button")
+					$("#googleButton").addClass("glow-ball-ui-button")
+					break;
+				case 3:
+					$(".menu__list-link").removeClass("hexagon-ui-button hexagon-ui-widget hexagon-ui-corner-all ")
+					$(".menu__list-link").removeClass("glow-ball-ui-button glow-ball-ui-widget glow-ball-ui-corner-all")
+					$(".menu__list-link").removeClass("custom-ui-button custom-ui-widget custom-ui-corner-al")
+					$(".menu__list-link").addClass("normal-ui-button normal-ui-widget normal-ui-corner-all")
+					$("#loginButton").removeClass("glow-ball-ui-button ")
+					$("#loginButton").removeClass("hexagon-ui-button")
+					$("#loginButton").addClass("normal-ui-button")
+					$("#registerButton").removeClass("glow-ball-ui-button ")
+					$("#registerButton").removeClass("hexagon-ui-button")
+					$("#registerButton").addClass("normal-ui-button")
+					$("#googleButton").removeClass("glow-ball-ui-button ")
+					$("#googleButton").removeClass("hexagon-ui-button")
+					$("#googleButton").addClass("normal-ui-button")
+					break;
+
+				case 4:
+					$(".menu__list-link").removeClass("hexagon-ui-button hexagon-ui-widget hexagon-ui-corner-all")
+					$(".menu__list-link").removeClass("glow-ball-ui-button glow-ball-ui-widget glow-ball-ui-corner-all")
+					$(".menu__list-link").removeClass("normal-ui-button normal-ui-widget normal-ui-corner-all")
+					$(".menu__list-link").addClass("custom-ui-button custom-ui-widget custom-ui-corner-all")
+					$("#loginButton").removeClass("glow-ball-ui-button ")
+					$("#loginButton").removeClass("hexagon-ui-button")
+					$("#loginButton").addClass("normal-ui-button")
+					$("#registerButton").removeClass("glow-ball-ui-button ")
+					$("#registerButton").removeClass("hexagon-ui-button")
+					$("#registerButton").addClass("normal-ui-button")
+					$("#googleButton").removeClass("glow-ball-ui-button ")
+					$("#googleButton").removeClass("hexagon-ui-button")
+					$("#googleButton").addClass("normal-ui-button")
+					break;
+			}
+			$("#selectorTema").on("change", () => {
+
+
+				console.log(select.val());
+
+				$("#registerButton").draggable();
+
+				switch (Number(select.val())) {
+					case 1:
+						$(".menu__list-link").removeClass("normal-ui-button normal-ui-widget normal-ui-corner-all ")
+						$(".menu__list-link").removeClass("glow-ball-ui-button glow-ball-ui-widget glow-ball-ui-corner-all ")
+						$(".menu__list-link").removeClass("custom-ui-button custom-ui-widget custom-ui-corner-al")
+
+						$(".menu__list-link").addClass("hexagon-ui-button hexagon-ui-widget hexagon-ui-corner-all ")
+						$("#loginButton").removeClass("glow-ball-ui-button ")
+						$("#loginButton").removeClass("normal-ui-button")
+						$("#loginButton").removeClass("custom-ui-button")
+						$("#loginButton").addClass("hexagon-ui-button")
+						$("#registerButton").removeClass("glow-ball-ui-button ")
+						$("#registerButton").removeClass("normal-ui-button")
+						$("#registerButton").removeClass("custom-ui-button")
+						$("#registerButton").addClass("hexagon-ui-button")
+						$("#googleButton").removeClass("glow-ball-ui-button ")
+						$("#googleButton").removeClass("normal-ui-button")
+						$("#googleButton").removeClass("custom-ui-button")
+						$("#googleButton").addClass("hexagon-ui-button")
+						break;
+					case 2:
+						$(".menu__list-link").removeClass("hexagon-ui-button hexagon-ui-widget hexagon-ui-corner-all")
+						$(".menu__list-link").removeClass("normal-ui-button normal-ui-widget normal-ui-corner-all ")
+						$(".menu__list-link").removeClass("custom-ui-button custom-ui-widget custom-ui-corner-al")
+
+						$(".menu__list-link").addClass("glow-ball-ui-button glow-ball-ui-widget glow-ball-ui-corner-all ")
+						$("#loginButton").removeClass("hexagon-ui-button ")
+						$("#loginButton").removeClass("normal-ui-button")
+						$("#loginButton").removeClass("custom-ui-button")
+						$("#loginButton").addClass("glow-ball-ui-button")
+						$("#registerButton").removeClass("hexagon-ui-button ")
+						$("#registerButton").removeClass("normal-ui-button")
+						$("#registerButton").removeClass("custom-ui-button")
+						$("#registerButton").addClass("glow-ball-ui-button")
+						$("#googleButton").removeClass("hexagon-ui-button ")
+						$("#googleButton").removeClass("normal-ui-button")
+						$("#googleButton").removeClass("custom-ui-button")
+
+						$("#googleButton").addClass("glow-ball-ui-button")
+						break;
+					case 3:
+						$(".menu__list-link").removeClass("hexagon-ui-button hexagon-ui-widget hexagon-ui-corner-all ")
+						$(".menu__list-link").removeClass("glow-ball-ui-button glow-ball-ui-widget glow-ball-ui-corner-all")
+						$(".menu__list-link").removeClass("custom-ui-button custom-ui-widget custom-ui-corner-al")
+						$(".menu__list-link").addClass("normal-ui-button normal-ui-widget normal-ui-corner-all")
+						$("#loginButton").removeClass("glow-ball-ui-button ")
+						$("#loginButton").removeClass("hexagon-ui-button")
+						$("#loginButton").removeClass("custom-ui-button")
+						$("#loginButton").addClass("normal-ui-button")
+						$("#registerButton").removeClass("glow-ball-ui-button ")
+						$("#registerButton").removeClass("hexagon-ui-button")
+						$("#registerButton").removeClass("custom-ui-button")
+						$("#registerButton").addClass("normal-ui-button")
+						$("#googleButton").removeClass("glow-ball-ui-button ")
+						$("#googleButton").removeClass("custom-ui-button")
+						$("#googleButton").addClass("normal-ui-button")
+						break;
+
+					case 4:
+						$(".menu__list-link").removeClass("hexagon-ui-button hexagon-ui-widget hexagon-ui-corner-all")
+						$(".menu__list-link").removeClass("glow-ball-ui-button glow-ball-ui-widget glow-ball-ui-corner-all")
+						$(".menu__list-link").removeClass("normal-ui-button normal-ui-widget normal-ui-corner-all")
+						$(".menu__list-link").addClass("custom-ui-button custom-ui-widget custom-ui-corner-all")
+						$("#loginButton").removeClass("glow-ball-ui-button ")
+						$("#loginButton").removeClass("hexagon-ui-button")
+						$("#loginButton").removeClass("normal-ui-button")
+						$("#loginButton").addClass("custom-ui-button")
+						$("#registerButton").removeClass("glow-ball-ui-button ")
+						$("#registerButton").removeClass("hexagon-ui-button")
+						$("#registerButton").removeClass("normal-ui-button")
+						$("#registerButton").addClass("custom-ui-button")
+						$("#googleButton").removeClass("glow-ball-ui-button ")
+						$("#googleButton").removeClass("hexagon-ui-button")
+						$("#googleButton").removeClass("normal-ui-button")
+						$("#googleButton").addClass("custom-ui-button")
+						break;
+				}
+			});
+		});
+	</script>
 </head>
 
 <body>
 
 	<header class="header">
 		<div class="header__logo ">
-			<a href="FOW_landing_page.html" class="header__logo--link"> <img src="resources/Logo-removebg-preview.png"
+			<a href="FOW_landing_page.html" class="header__logo--link"> <img src="resources/logo vectorizado.svg"
 					alt=""> </a>
 		</div>
 
@@ -22,15 +191,26 @@
 				<li class="header__menu-list--element"><a class="menu__list-link" href="login.html"> LOGIN</a></li>
 				<li class="header__menu-list--element"> <a class="menu__list-link" href="">QUIENES SOMOS</a></li>
 				<li class="header__menu-list--element"><a class="menu__list-link" href=""> SOPORTE </a></li>
-				<li class="header__menu-list--element"> <a class="menu__list-imagen" href="menu__list-imagen"><img
-							class=""
+				<li class="header__menu-list--element"> <a class="menu__list-imagen"
+						href="https://pbs.twimg.com/media/FAe_czuWQAcq9MV?format=png&name=small"><img class=""
 							src="resources/png-transparent-foreign-language-language-acquisition-learning-word-spanish-language-word-foreign-language-symbol-thumbnail.png"
 							alt="" width="80px" height="80px">
 					</a>
 				</li>
+				<select id="selectorTema">
+					<option value="1" selected>Hexagon</option>
+					<option value="2">Glow Ball</option>
+					<option value="3">Normal</option>
+					<option value="4">Custom</option>
+				</select>
 			</ul>
 		</div>
 	</header>
+
+	<video id="video" loop="true" autoplay="autoplay" muted>
+		<source src="resources/videoFondoLogin.mp4" type="video/mp4">
+		Tu navegador no es compatible con los videos illo
+	</video>
 
 	<div class="container">
 		<div class="pantalla">
@@ -43,20 +223,20 @@
 						<input type="password" class="loginInput" placeholder="Contraseña">
 					</div>
 					<div class="loginDoble">
-						<input class="form-check-input checkRecordar" type="checkbox" value="" id="">
-						<label class="loginRecordar" for="">
+						<input class="form-check-input checkRecordar" value="" type="checkbox" id="recordar">
+						<label class="loginRecordar" for="" id="labelRecordar">
 							Recordar
 						</label>
-						<a href="productos.html" class="button loginSubmit">
+						<a href="productos.html" class=" loginSubmit loginButton" id="loginButton">
 							<p>Iniciar Sesion</p>
 						</a>
 					</div>
-					<a href="productos.html" class="button loginSubmit">
-							<p>Iniciar Sesion con google</p>
+					<a href="productos.html" class=" loginSubmit" id="googleButton">
+						<p>Iniciar Sesion con google</p>
 					</a>
 
 					<div class="register">
-						<a href="paginaRegistro.html" class="button loginSubmit">
+						<a href="paginaRegistro.html" class=" loginSubmit" id="registerButton">
 							<p>Registrarse</p>
 						</a>
 					</div>
@@ -136,17 +316,30 @@
 		</ul>
 
 		<div class="images">
-            <a href="https://www.facebook.com"><img src="resources/Facebook_f_logo_(2019).svg.png" widht="50px" height="50px" alt=""></a>
-            <a href="https://www.instagram.com"> <img src="resources/Instagram_logo_2016.svg.png" alt="" widht="50px" height="50px"></a>
-            <a href="https://www.twitter.com"> <img src="resources/twitter-logo-300x300.png" alt="" widht="50px" height="50px"> </a>
-        </div>
+			<a href="https://www.facebook.com"><img src="resources/Facebook_f_logo_(2019).svg.png" widht="50px"
+					height="50px" alt=""></a>
+			<a href="https://www.instagram.com"> <img src="resources/Instagram_logo_2016.svg.png" alt="" widht="50px"
+					height="50px"></a>
+			<a href="https://www.twitter.com"> <img src="resources/twitter-logo-300x300.png" alt="" widht="50px"
+					height="50px"> </a>
+		</div>
 	</footer>
-	<p>
-		<a href="http://jigsaw.w3.org/css-validator/check/referer">
-			<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
-				alt="¡CSS Válido!" />
-		</a>
-	</p>
+	<details>
+		<summary>Licencias</summary>
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="¡CSS Válido!" />
+			</a> <br>
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img
+					alt="Licencia Creative Commons" style="border-width:0"
+					src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Esta
+			obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licencia
+				Creative
+				Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional</a>.
+		<p id="fuente">Fuente: www.pixabay.com </p>
+		</p>
+	</details>
 </body>
 
 </html>
